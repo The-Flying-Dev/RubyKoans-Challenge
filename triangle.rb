@@ -14,6 +14,11 @@
 #   about_triangle_project_2.rb
 #
 def triangle(a, b, c)
+  triangle_array = [a, b, c].sort!
+  
+  raise TriangleError if triangle_array.any? { |i| i <= 0}
+  raise TriangleError unless (triangle_array[0] + triangle_array[1]) > triangle_array[2]
+  
   # WRITE THIS CODE  
   [:equilateral, :isosceles, :scalene].fetch([a, b, c].uniq.size - 1)
 end
