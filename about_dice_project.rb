@@ -1,5 +1,5 @@
 require File.expand_path(File.dirname(__FILE__) + '/neo')
-
+=begin
 # Implement a DiceSet Class here:
 #
 # class DiceSet
@@ -61,3 +61,4 @@ class AboutDiceProject < Neo::Koan
   end
 
 end
+=end
