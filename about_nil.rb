@@ -31,8 +31,10 @@ class AboutNil < Neo::Koan
     # Is it better to use
     #    obj.nil?
     # or
-    #    obj == nil
+    #    obj == nil   
     # Why?
+    # obj.nil? calls .nil? method on an obj and returns a boolean based on value
+    # obj == nil is assigning the obj variable the value of nil
   end
 
 end
